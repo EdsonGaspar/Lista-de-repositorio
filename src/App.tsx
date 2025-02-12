@@ -1,5 +1,11 @@
+import { RepositoryList } from "./components/RepositoryList";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <RepositoryList />
+    </>
+  );
 }
 
 export default App;
