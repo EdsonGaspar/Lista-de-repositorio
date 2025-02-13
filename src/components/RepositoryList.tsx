@@ -13,14 +13,14 @@ export function RepositoryList({
 }: RepositoryItemProps) {
   return (
     <section className="text-base font-sans text-[rgb(18,18,20)]">
-      <h1 className="text-2xl">Lista de repositórios</h1>
+      <h1 className="text-2xl font-bold mb-2">Lista de repositórios</h1>
       <ul>
         <li>
           <strong>{name}</strong>
           <p>{description}</p>
           <a href={html_url}>{"Acessar repositório"}</a>
         </li>
-        <RepositorioItem className="border" />
+        <RepositorioItem />
         <RepositorioItem />
         <RepositorioItem />
       </ul>
