@@ -1,3 +1,5 @@
+import { RepositorioItem } from "./repositorioItem";
+
 interface RepositoryItemProps {
   name: string;
   description: string;
@@ -10,14 +12,17 @@ export function RepositoryList({
   html_url,
 }: RepositoryItemProps) {
   return (
-    <section>
+    <section className="text-base font-sans text-[rgb(18,18,20)]">
       <h1 className="text-2xl">Lista de repositórios</h1>
       <ul>
         <li>
           <strong>{name}</strong>
           <p>{description}</p>
-          <a href="">{html_url}</a>
+          <a href={html_url}>{"Acessar repositório"}</a>
         </li>
+        <RepositorioItem className="border" />
+        <RepositorioItem />
+        <RepositorioItem />
       </ul>
     </section>
   );
